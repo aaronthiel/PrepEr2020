@@ -50,14 +50,13 @@ var items = [
    ["intro", "Form", {consentRequired: true, html: {include: "intro2.html" }} ],
    ["intro", "Form", {consentRequired: true, html: {include: "intro3.html" }} ],
    ["exit", "Form", {consentRequired: false, html: {include: "exit.html" }} ],
-    
-    ["sepprac", "Separator", {transfer: 1000, errorMessage: "Wrong. Please wait."}],
-    
-    ["sepexp", "Separator", {transfer: 500}],
-
-    ["break", "Message", {
-        html: { include: "break.html" },
-        transfer: "keypress"
+   ["sepprac", "Separator", {transfer: 1000, errorMessage: "Wrong. Please wait."}],
+   
+   ["sepexp", "Separator", {transfer: 500}],
+   
+   ["break", "Message", {
+       html: { include: "break.html" },
+       transfer: "keypress"
     } ],
     
 
@@ -93,7 +92,7 @@ var items = [
                            ]}],
 
 */
-["presepA", Separator, {transfer: 3000, normalMessage: "Get your hands in position, and get ready to begin!" }],
+["presepA", Separator, {transfer: 3000, normalMessage: "Houd uw handen in positie en maak u klaar om te beginnen!" }],
 ["dummysep", Separator, {transfer: 10, normalMessage: ""}],
 ["dummysep", Separator, {transfer: 10, normalMessage: ""}],
 ["dummysep", Separator, {transfer: 10, normalMessage: ""}],
@@ -105,14 +104,15 @@ var items = [
 ["dummysep", Separator, {transfer: 10, normalMessage: ""}],
 ["dummysep", Separator, {transfer: 10, normalMessage: ""}],
 
-    //Stimuli List
-
-[["prepEr.NU",1], "DashedSentence", {s: ["Het nieuws", "is op tv.", "Ik probeer nu", "met mijn oude moeder", "naar", "het nieuws te kijken."]}, "Question", {q: "Wordt iemands moeder in de zin genoemd?", as: ["Ja", "Nee"], hasCorrect: 0}],
+//Stimuli List
+[["prepEr.NU",1], "DashedSentence", {s: ["Het nieuws", "is op tv.", "Ik probeer nu", "met mijn oude moeder", "naar", "het nieuws", "te kijken."]}, "Question", {q: "Wordt iemands moeder in de zin genoemd?", as: ["Ja", "Nee"], hasCorrect: 0}],
 [["prepEr.ER",1], "DashedSentence", {s: ["Het nieuws", "is op tv.", "Ik probeerer", "met mijn oude moeder", "naar", "te kijken."]}, "Question", {q: "Wordt iemands vader in de zin genoemd?", as: ["Ja", "Nee"], hasCorrect: 1}],
 [["prepEr.NU",2], "DashedSentence", {s: ["Klassiek is", "zijn favoriete muziek.", "Hij wil nu", "in de auto altijd", "naar", "klassiek luisteren", "op hoog volume."]}, "Question", {q: "Gaat deze zin over rockmuziek?", as: ["Ja", "Nee"], hasCorrect: 1}],
 [["prepEr.ER",2], "DashedSentence", {s: ["Klassiek is", "zijn favoriete muziek.", "Hij wil er", "in de auto altijd", "naar", "luisteren", "op hoog volume."]}, "Question", {q: "Gaat deze zin over klassieke muziek?", as: ["Ja", "Nee"], hasCorrect: 0}],
-
-    //Fillers
-
-[["filler",2], "DashedSentence", {s: ["Het huis van mijn vader", "is vlakbij.", "Ik probeer nu", "twee keer per maand", "naar", "het huis", "van mijn vader", "te gaan."]}, "Question", {q: "Is any NGO mentioned in the sentence?", hasCorrect: 0}],
-];
+[["prepEr.NU",3], "DashedSentence", {s: ["Haar autosleutel", "is rood.", "Ze moet nu", "’s ochtends vaak", "naar", "haar autosleutel", "zoeken als ze weggaat."]}, "Question", {q: "Zijn de autosleutels rood?", as: ["Ja", "Nee"], hasCorrect: 0}],
+[["prepEr.ER",3], "DashedSentence", {s: ["Haar autosleutel", "is rood.", "Ze moet er", "’s ochtends vaak", "naar", "zoeken als ze weggaat."]}, "Question", {q: "Zijn de autosleutels blauw?", as: ["Ja", "Nee"], hasCorrect: 1}],
+[["prepEr.NU",4], "DashedSentence", {s: ["Het postkantoor is open. U kunt nu elke dag pakketten naar het postkan- toor brengen tot sluitingstijd."]}, "Question", {q: "Zijn de autosleutels rood?", as: ["Ja", "Nee"], hasCorrect: 0}],
+[["prepEr.ER",4], "DashedSentence", {s: ["Haar autosleutel", "is rood.", "Ze moet er", "’s ochtends vaak", "naar", "zoeken als ze weggaat."]}, "Question", {q: "Zijn de autosleutels blauw?", as: ["Ja", "Nee"], hasCorrect: 1}],
+   
+//Fillers
+[["filler"], "DashedSentence", {s: ["Het huis van mijn vader", "is vlakbij.", "Ik probeer nu", "twee keer per maand", "naar", "het huis", "van mijn vader", "te gaan."]}, "Question", {q: "Is any NGO mentioned in the sentence?", hasCorrect: 0}],];
