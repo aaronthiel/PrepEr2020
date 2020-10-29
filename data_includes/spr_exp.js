@@ -2,7 +2,7 @@ var shuffleSequence = seq("setcounter", "intro",
                           sepWith("sepprac", seq("prac")), "presepA", "dummysep", 
                           sepWith("sepexp", rshuffle(startsWith("prepEr"), startsWith("filler"))));
 var practiceItemTypes = ["prac"];
-var completionMessage = "Thank you for your participation!"
+var completionMessage = "Hartelijk dank voor uw deelname! U kunt nu het venster sluiten."
 
     
 var defaults = [
@@ -49,7 +49,7 @@ var items = [
    ["intro", "Form", {consentRequired: true, html: {include: "intro1.html" }} ],
    ["intro", "Form", {consentRequired: true, html: {include: "intro2.html" }} ],
    ["intro", "Form", {consentRequired: true, html: {include: "intro3.html" }} ],
-   ["exit", "Form", {consentRequired: false, html: {include: "exit.html" }} ],
+//   ["exit", "Form", {consentRequired: false, html: {include: "exit.html" }} ],
    ["sepprac", "Separator", {transfer: 1000, errorMessage: "Verkeerd antwoord. Even geduld aub.x"}],
    
    ["sepexp", "Separator", {transfer: 500}],
