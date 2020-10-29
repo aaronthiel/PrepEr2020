@@ -7,13 +7,13 @@ var completionMessage = "Thank you for your participation!"
     
 var defaults = [
     "Separator", {
-        normalMessage: "Please wait."
+        normalMessage: "Even geduld aub."
     },
     "DashedSentence", {
         mode: "self-paced reading", display: "dashed", blankText: "blankText"
     },
     "Question", {
-        as: ["Yes", "No"],
+        as: ["Ja", "Nee"],
         randomOrder: false
     },
     "Message", {
@@ -32,7 +32,7 @@ function modifyRunningOrder(ro) {
  if (i % 24 == 22 && i > 30 && i < 300) {
  ro[i].push(new DynamicElement(
  "Message",
- { html: "<p>Please take a short break. The experiment will continue in 10 seconds.</p>", transfer: 10000 },
+ { html: "<p>Neem een korte pauze. Het experiment wordt over 10 seconden voortgezet.</p>", transfer: 10000 },
  true
  ));
  }
@@ -50,7 +50,7 @@ var items = [
    ["intro", "Form", {consentRequired: true, html: {include: "intro2.html" }} ],
    ["intro", "Form", {consentRequired: true, html: {include: "intro3.html" }} ],
    ["exit", "Form", {consentRequired: false, html: {include: "exit.html" }} ],
-   ["sepprac", "Separator", {transfer: 1000, errorMessage: "Wrong. Please wait."}],
+   ["sepprac", "Separator", {transfer: 1000, errorMessage: "Verkeerd antwoord. Even geduld aub.x"}],
    
    ["sepexp", "Separator", {transfer: 500}],
    
@@ -105,14 +105,18 @@ var items = [
 ["dummysep", Separator, {transfer: 10, normalMessage: ""}],
 
 //Stimuli List
-[["prepEr.NU",1], "DashedSentence", {s: ["Het nieuws", "is op tv.", "Ik probeer nu", "met mijn oude moeder", "naar", "het nieuws", "te kijken."]}, "Question", {q: "Wordt iemands moeder in de zin genoemd?", as: ["Ja", "Nee"], hasCorrect: 0}],
-[["prepEr.ER",1], "DashedSentence", {s: ["Het nieuws", "is op tv.", "Ik probeerer", "met mijn oude moeder", "naar", "te kijken."]}, "Question", {q: "Wordt iemands vader in de zin genoemd?", as: ["Ja", "Nee"], hasCorrect: 1}],
-[["prepEr.NU",2], "DashedSentence", {s: ["Klassiek is", "zijn favoriete muziek.", "Hij wil nu", "in de auto altijd", "naar", "klassiek luisteren", "op hoog volume."]}, "Question", {q: "Gaat deze zin over rockmuziek?", as: ["Ja", "Nee"], hasCorrect: 1}],
-[["prepEr.ER",2], "DashedSentence", {s: ["Klassiek is", "zijn favoriete muziek.", "Hij wil er", "in de auto altijd", "naar", "luisteren", "op hoog volume."]}, "Question", {q: "Gaat deze zin over klassieke muziek?", as: ["Ja", "Nee"], hasCorrect: 0}],
-[["prepEr.NU",3], "DashedSentence", {s: ["Haar autosleutel", "is rood.", "Ze moet nu", "’s ochtends vaak", "naar", "haar autosleutel", "zoeken als ze weggaat."]}, "Question", {q: "Zijn de autosleutels rood?", as: ["Ja", "Nee"], hasCorrect: 0}],
-[["prepEr.ER",3], "DashedSentence", {s: ["Haar autosleutel", "is rood.", "Ze moet er", "’s ochtends vaak", "naar", "zoeken als ze weggaat."]}, "Question", {q: "Zijn de autosleutels blauw?", as: ["Ja", "Nee"], hasCorrect: 1}],
-[["prepEr.NU",4], "DashedSentence", {s: ["Het postkantoor is open. U kunt nu elke dag pakketten naar het postkan- toor brengen tot sluitingstijd."]}, "Question", {q: "Zijn de autosleutels rood?", as: ["Ja", "Nee"], hasCorrect: 0}],
-[["prepEr.ER",4], "DashedSentence", {s: ["Haar autosleutel", "is rood.", "Ze moet er", "’s ochtends vaak", "naar", "zoeken als ze weggaat."]}, "Question", {q: "Zijn de autosleutels blauw?", as: ["Ja", "Nee"], hasCorrect: 1}],
-   
+[["prepEr.NU",1], "DashedSentence", {s: ["Het nieuws", "is op tv.", "Ik probeer nu", "met mijn oude moeder", "naar", "het nieuws", "te kijken."]}, "Question", {q: "Wordt iemands moeder in de zin genoemd?", hasCorrect: 0}],
+[["prepEr.ER",1], "DashedSentence", {s: ["Het nieuws", "is op tv.", "Ik probeerer", "met mijn oude moeder", "naar", "te kijken."]}, "Question", {q: "Wordt iemands vader in de zin genoemd?", hasCorrect: 1}],
+[["prepEr.NU",2], "DashedSentence", {s: ["Klassiek is", "zijn favoriete muziek.", "Hij wil nu", "in de auto altijd", "naar", "klassiek luisteren", "op hoog volume."]}, "Question", {q: "Gaat deze zin over rockmuziek?", hasCorrect: 1}],
+[["prepEr.ER",2], "DashedSentence", {s: ["Klassiek is", "zijn favoriete muziek.", "Hij wil er", "in de auto altijd", "naar", "luisteren", "op hoog volume."]}, "Question", {q: "Gaat deze zin over klassieke muziek?", hasCorrect: 0}],
+[["prepEr.NU",3], "DashedSentence", {s: ["Haar autosleutel", "is rood.", "Ze moet nu", "’s ochtends vaak", "naar", "haar autosleutel", "zoeken als ze weggaat."]}, "Question", {q: "Zijn de autosleutels rood?", hasCorrect: 0}],
+[["prepEr.ER",3], "DashedSentence", {s: ["Haar autosleutel", "is rood.", "Ze moet er", "’s ochtends vaak", "naar", "zoeken als ze weggaat."]}, "Question", {q: "Zijn de autosleutels blauw?", hasCorrect: 1}],
+[["prepEr.NU",4], "DashedSentence", {s: ["Het postkantoor", "is open.", "U kunt nu", "elke dag pakketten", "naar", "het postkantoor", "brengen tot sluitingstijd."]}, "Question", {q: "Gaat deze zin over openingstijden?", hasCorrect: 0}],
+[["prepEr.ER",4], "DashedSentence", {s: ["Het postkantoor", "is open.", "U kunt er", "elke dag pakketten", "naar", "brengen tot sluitingstijd."]}, "Question", {q: "Is het postkantoor open?", hasCorrect: 0}],
+[["prepEr.NU",5], "DashedSentence", {s: ["Deze film", "lijkt goed.", "Hij wil nu", "met zijn vrienden", "naar", "deze film kijken", "in de bioscoop."]}, "Question", {q: "Gaat deze zin over televisie?", hasCorrect: 1}],
+[["prepEr.ER",5], "DashedSentence", {s: ["Deze film", "lijkt goed.", "Hij wil er", "met zijn vrienden", "naar", "kijken in de bioscoop."]}, "Question", {q: "Wil hij de film met zijn moeder zien?", hasCorrect: 1}],
+[["prepEr.NU",6], "DashedSentence", {s: ["De kat", "is verlegen.", "We moeten nu", "vaak allemaal", "naar", "de kat zoeken", "nadat mensen", "weer zijn vertrokken."]}, "Question", {q: "Gaat deze zin over een hond?", hasCorrect: 1}],
+[["prepEr.ER",6], "DashedSentence", {s: ["De kat", "is verlegen.", "We moeten er", "vaak allemaal", "naar", "zoeken nadat mensen", "weer zijn vertrokken."]}, "Question", {q: "Gaat deze zin over een kat?", hasCorrect: 0}],
+ 
 //Fillers
-[["filler"], "DashedSentence", {s: ["Het huis van mijn vader", "is vlakbij.", "Ik probeer nu", "twee keer per maand", "naar", "het huis", "van mijn vader", "te gaan."]}, "Question", {q: "Is any NGO mentioned in the sentence?", hasCorrect: 0}],];
+[["filler",16], "DashedSentence", {s: ["Het huis van mijn vader", "is vlakbij.", "Ik probeer nu", "twee keer per maand", "naar", "het huis", "van mijn vader", "te gaan."]}, "Question", {q: "Is any NGO mentioned in the sentence?", hasCorrect: 0}],];
