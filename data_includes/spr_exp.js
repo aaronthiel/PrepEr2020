@@ -62,14 +62,14 @@ var items = [
 
     
     // Practice
-/*    
-["prac", "DashedSentence", {s: ["This is", "just a practice sentence", "to get you used", "to the method", "of presentation."]}, "Question",  {q:"Was that sentence easy?"}, Separator, { }],
-["prac", "DashedSentence", {s: ["This is", "another practice sentence", "which is longer", "and a little more complicated", "than the one", "you just read."]}, "Question",  {q:"Did you read that at a normal pace?" }],
+   
+    ["prac", "DashedSentence", {s: ["Dit is", "een oefenzin", "om u aan de presentatiemethode", "te laten wennen"]}, "Question",  {q:"Was die zin gemakkelijk?"}, Separator, { }],
+    ["prac", "DashedSentence", {s: ["Dit is", "een andere oefenzin,", "die langer en", "iets gecompliceerder is", "dan degene die", "je net hebt gelezen."]}, "Question",  {q:"Heb je dat in een normaal tempo gelezen?"}],
                            
-["prac", Message, {consentRequired: false, transfer: "keypress",
-                     html: ["div",
-                           ["p", "That's all there is to it! Let's try some practice sentences more like the ones you'll be seeing in the experiment:"]
-                           ]}],
+    ["prac", Message, {consentRequired: false, transfer: "keypress",
+                    html: ["div",
+                          ["p", "Dat is alles wat u hoeft te doen! Laten we wat oefenzinnen proberen, zoals de zinnen die u in het experiment zult zien:"]
+                          ]}],
 
 ["prac", "DashedSentence", {s: ["My favorite singer", "is famous for", "revolutionizing country music.", "My favorite movie star", "is a high-achieving", "young woman.", "They are both", "very inspiritional.", "I have", "learned a lot", "from their stories."]}, "Question", {hasCorrect: 0, q: "Is any singer mentioned in the sentence?"}],
 ["prac", "DashedSentence", {s: ["This desk", "belongs to", "Sandra.", "That desk over there", "belongs to", "her brother Nick.", "Both of these tables", "is black.", "The siblings", "are thinking about", "selling the tables."]}, "Question", {hasCorrect: 1, q: "Does Sandra own a white table?"}],
@@ -91,7 +91,7 @@ var items = [
                            ["p", "That's all the practice! When you're ready to begin the experiment, press any button to move ahead. REMEMBER: it will last approximately 80 minutes, and will require your full attention throughout that period. Thank you for your help!"]
                            ]}],
 
-*/
+
 ["presepA", Separator, {transfer: 3000, normalMessage: "Houd uw handen in positie en maak u klaar om te beginnen!" }],
 ["dummysep", Separator, {transfer: 10, normalMessage: ""}],
 ["dummysep", Separator, {transfer: 10, normalMessage: ""}],
