@@ -19,13 +19,13 @@ jqueryWidget: {
         this.saveReactionTime = dget(this.options, "saveReactionTime", false);
         this.obligatoryErrorGenerator =
             dget(this.options, "obligatoryErrorGenerator",
-                 function (field) { return "The \u2018" + field + "\u2019 field is obligatory."; });
+                 function (field) { return "Het \u2018" + field + "\u2019 veld is verplicht."; });
         this.obligatoryCheckboxErrorGenerator =
             dget(this.options, "obligatoryCheckboxErrorGenerator",
-                 function (field) { return "You must check the " + field + " checkbox to continue."; });
+                 function (field) { return "U moet het " + field + " vakje aanvinken om door te gaan."; });
         this.obligatoryRadioErrorGenerator =
             dget(this.options, "obligatoryRadioErrorGenerator",
-                 function (field) { return "You must select an option for \u2018" + field + "\u2019."; });
+                 function (field) { return "U moet een optie selecteren voor \u2018" + field + "\u2019."; });
 
         var t = this;
 

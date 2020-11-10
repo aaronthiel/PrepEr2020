@@ -7,14 +7,17 @@ var completionMessage = "Hartelijk dank voor uw deelname! U kunt nu het venster 
     
 var defaults = [
     "Separator", {
-        normalMessage: "Even geduld aub."
+        normalMessage: "Even geduld aub.",
+        hideProgressBar: true
     },
     "DashedSentence", {
-        mode: "self-paced reading", display: "dashed", blankText: "blankText"
+        mode: "self-paced reading", display: "dashed", blankText: "blankText",
+        hideProgressBar: true
     },
     "Question", {
         as: ["Ja", "Nee"],
-        randomOrder: false
+        randomOrder: false,
+        hideProgressBar: true
     },
     "Message", {
         hideProgressBar: true

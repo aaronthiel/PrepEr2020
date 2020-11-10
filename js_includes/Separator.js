@@ -19,11 +19,11 @@ jqueryWidget: {
         assert(this.transfer == "keypress" || typeof(this.transfer) == "number",
                "Value of 'transfer' option of Separator must either be the string 'keypress' or a number");
 
-        var normal_message = dget(this.options, "normalMessage", "Press any key to continue.");
+        var normal_message = dget(this.options, "normalMessage", "Druk op een willekeurige toets om door te gaan.");
         var x = this.utils.getValueFromPreviousElement("normalMessage");
         if (x) normal_message = x;
 
-        var error_message = dget(this.options, "errorMessage", "Wrong. Press any key to continue.");
+        var error_message = dget(this.options, "errorMessage", "Verkeerd antwoord. Druk op een willekeurige toets om door te gaan..");
         var x = this.utils.getValueFromPreviousElement("errorMessage");
         if (x) error_message = x;
 
